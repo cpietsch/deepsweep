@@ -1,0 +1,212 @@
+.satellite .graticule {
+  fill: none;
+  stroke: #777;
+  stroke-opacity:.2;
+}
+.satellite .graticule2 {
+  fill: none;
+  stroke: red;
+  stroke-opacity:.2;
+}
+
+.satellite .countries {
+  fill: #ccc;
+  fill-opacity: .3;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.satellite .circle {
+	opacity: 0.8;
+}
+.satellite {
+	position: fixed;
+}
+.satellite .route {
+	fill: none;
+	stroke: #000;
+}
+.satellite .hori {
+	fill: none;
+	stroke: blue;
+	opacity: 0.1;
+}
+.satellite .routeAfter {
+	fill: none;
+	stroke: #333333;
+	stroke-linecap: round;
+	stroke-width: 1;
+	stroke-dasharray: 1, 6;
+}
+.satellite .routeBefore {
+	fill: none;
+	stroke: #000;
+	stroke-linecap: round;
+	stroke-width: 1;
+	
+}
+
+
+
+.satellite .poi path {
+	fill:#C3C3C3;
+	pointer-events:none;
+}
+
+.voronoi path {
+  fill: none;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+
+
+.voronoi circle {
+  fill: #3B3B3B;
+  display: none;
+}
+
+.voronoi :hover circle, .voronoi .hover circle {
+  display: inline;
+  pointer-events: none;
+}
+
+.annotations {
+	cursor: pointer;
+}
+.annotations line {
+	stroke-width: 0.5px;
+	stroke: rgb(135, 135, 135);
+}
+
+/* No style rules here yet */		
+body,html{
+  height:100%;
+}
+body {
+	color: rgba(0,0,0,.8);
+	text-shadow: 0 0 4px #FFF;
+	font-family: "Inconsolata", monospace, "Courier New", Courier, monospace;
+	padding: 0;
+	margin: 0;
+	background-color:#F2F2F2;
+	line-height: 130%;	
+	font-size: 12px;
+	/*overflow: hidden;*/
+}
+a {
+	color:#000;
+	padding-left:0px;
+}
+
+
+a:active,visited{
+	color:#000;
+}
+	
+a:hover{
+	color:#333;
+	}
+
+h1 {
+	line-height:0.6em;
+	font-size: 12px;
+	
+}
+	
+h2 {
+	font-size: 15px;
+}
+p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+
+.title {
+
+	font-size: 12px;
+	font-weight: bold;
+	opacity: 0.9;
+
+}
+
+
+#gradient {
+    position:fixed;
+    z-index:2;
+    top:590px;
+    right:0; bottom:0; left:0;
+    height:300px;
+    
+    background: -moz-linear-gradient(top,  rgba(242, 242, 242,0) 0%, rgba(242, 242, 242,1) 70%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242, 242, 242,0)), color-stop(70%,rgba(242, 242, 242,1)));
+    background: -webkit-linear-gradient(top,  rgba(242, 242, 242,0) 0%,rgba(242, 242, 242,1) 70%);
+    background: -o-linear-gradient(top,  rgba(242, 242, 242,0) 0%,rgba(242, 242, 242,1) 70%);
+    background: -ms-linear-gradient(top,  rgba(242, 242, 242,0) 0%,rgba(242, 242, 242,1) 70%);
+    background: linear-gradient(to bottom,  rgba(242, 242, 242,0) 0%,rgba(242, 242, 242,1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00F2F2F2', endColorstr='#F2F2F2',GradientType=0 );
+
+}
+
+#overlay, overlay {
+	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);*/
+    box-shadow: -1px 0 2px 0 rgba(0,0,0,0.12) , 1px 0 2px 0 rgba(0,0,0,0.12) , 0 1px 1px 0 rgba(0,0,0,0.24);
+
+	position: absolute;
+	right: 20px;
+	top: 160px;
+	background: rgba(255, 255, 255, 0.78);
+	width: 800px;
+	z-index: 200;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+#charts {
+	font-size: 10px;
+}
+
+#charts .line {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1px;
+  
+}
+
+#charts .area {
+  fill: #e7e7e7;
+}
+
+.axis path {
+  display: none;
+}
+
+.axis line {
+  shape-rendering: crispEdges;
+  stroke: #A0A0A0;
+}
+
+.axis .minor line {
+  stroke: #BFBFBF;
+  stroke-dasharray: 2,2;
+}
+
+line.timeline {
+    stroke: #9A9A9A;
+    opacity: 0.4;
+}
+
+
+div#container {
+    position: relative;
+    min-width: 1300px;
+
+}
+
+.bottom {
+	opacity: 0.8;
+    padding-top: 40px;
+    text-align: right;
+	
+}
